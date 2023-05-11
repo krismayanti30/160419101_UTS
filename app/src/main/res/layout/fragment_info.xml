@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_info">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:text="sebuah website penggalangan dana dan donasi online untuk inisiatif, campaign dan program sosial. Platform pelopor galang dana dan donasi online di Indonesia ini, telah menjadi wadah bagi banyak individu, komunitas, organisasi, hingga perusahaan yang juga disebut #Orangbaik untuk melakukan penggalangan dana dengan membuat halaman donasi online. Melalui Kitabisa, pengunjung dapat menyalurkan donasi online untuk masyarakat yang membutuhkan untuk tujuan sosial, personal, kreatif, dan sebagainya.  "
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif"
+        android:text="Satu Jiwa"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

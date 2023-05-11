@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment_donasi_pakaian" >
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:text="Jumlah Pakaian"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:hint="1 Pcs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editJumlahPakaian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Jenis Pakaian"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout9" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+        <RadioButton
+            android:id="@+id/radioBtnCelana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Celana" />
+
+        <RadioButton
+            android:id="@+id/radioBtnBaju"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Baju" />
+
+        <RadioButton
+            android:id="@+id/radioBtnKerudung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kerudung" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Alamat Penjemputan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Alamat Penjemputan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnDonasiPakaian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="Donasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout11" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

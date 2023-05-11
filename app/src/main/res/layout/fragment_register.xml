@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment_register">
+
+            <TextView
+                android:id="@+id/textRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:text="Register"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Username"
+                app:helperText="Required"
+                app:hintEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textRegister">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Password"
+                app:helperText="Required"
+                app:hintEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Repeat Password"
+                app:helperText="Required"
+                app:hintEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputRepeatPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Register"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnRegister">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="14dp"
+                    android:text="Sudah memiliki akun?" />
+
+                <TextView
+                    android:id="@+id/txtMasuk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Masuk"
+                    android:textColor="#673AB7" />
+
+            </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
