@@ -114,7 +114,7 @@
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/menuDeskripsi"
-        android:name="com.example.a160419101.fragment_info"
+        android:name="com.example.a160419101.view.fragment_info"
         android:label="fragment_info"
         tools:layout="@layout/fragment_info" />
 </navigation>
